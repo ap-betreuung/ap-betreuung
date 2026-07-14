@@ -254,3 +254,54 @@ h2 {
   .contact-grid { grid-template-columns: 1fr; }
   .logo { width: 170px; }
 }
+/* ==========================
+   Rechtliche Seiten
+========================== */
+
+.legal-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 80px 40px;
+    background: #ffffff;
+    color: #243328;
+    line-height: 1.8;
+}
+
+.legal-page h1 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.legal-page h2 {
+    font-size: 1.55rem;
+    font-weight: 400;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.legal-page p,
+.legal-page li {
+    font-size: 1.05rem;
+}
+
+.legal-page ul {
+    padding-left: 22px;
+    margin-bottom: 25px;
+}
+
+.legal-page a {
+    color: #243328;
+    text-decoration: underline;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 35px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
