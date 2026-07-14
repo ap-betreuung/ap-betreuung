@@ -1,4 +1,10 @@
-:root {
+@font-face {
+  font-family: "Cormorant Infant";
+  src: url("CormorantInfant-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}:root {
   --mint: #e4f8e9;
   --white: #ffffff;
   --ink: #10321f;
