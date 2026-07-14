@@ -1,0 +1,320 @@
+:root {
+  --mint: #e4f8e9;
+  --white: #ffffff;
+  --ink: #10321f;
+  --line: rgba(16, 50, 31, 0.14);
+  --max: 1180px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Cormorant Infant", Georgia, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-synthesis: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--mint);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* Visitenkarte */
+.intro {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 58px 36px;
+  background: var(--mint);
+}
+
+.intro__inner {
+  width: min(100%, var(--max));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(320px, 0.75fr);
+  gap: 86px;
+  align-items: center;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 12px;
+  font-size: clamp(3.6rem, 6.5vw, 5.8rem);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.intro__role {
+  margin-bottom: 8px;
+  font-size: clamp(1.65rem, 2.5vw, 2.35rem);
+  line-height: 1.1;
+}
+
+.intro__qualification {
+  margin: 0;
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
+}
+
+.intro__contact {
+  margin-top: 82px;
+  display: grid;
+  gap: 20px;
+  font-size: clamp(1.08rem, 1.5vw, 1.4rem);
+  line-height: 1.4;
+}
+
+.intro__contact a {
+  width: fit-content;
+}
+
+.intro__contact p {
+  margin: 0;
+}
+
+.intro__visuals {
+  display: grid;
+  justify-items: center;
+  gap: 84px;
+}
+
+.portrait {
+  display: block;
+  width: min(100%, 390px);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.logo {
+  display: block;
+  width: 170px;
+  max-height: 110px;
+  object-fit: contain;
+}
+
+/* Inhaltsbereiche */
+.section {
+  padding: 142px 36px;
+}
+
+.section--white {
+  background: var(--white);
+}
+
+.section--green {
+  background: var(--mint);
+}
+
+.section__inner {
+  width: min(100%, var(--max));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(280px, 0.58fr) minmax(0, 1.42fr);
+  gap: 96px;
+  align-items: start;
+}
+
+h2 {
+  margin: 0;
+  max-width: 100%;
+  font-size: clamp(2.45rem, 3.4vw, 3.6rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+.section__content {
+  max-width: 720px;
+}
+
+.prose {
+  display: grid;
+  gap: 28px;
+}
+
+.prose p,
+.lead {
+  margin: 0;
+  font-size: clamp(1.15rem, 1.55vw, 1.42rem);
+  line-height: 1.65;
+}
+
+/* Aufgabenbereiche */
+.areas {
+  margin: 42px 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 19px;
+}
+
+.areas li {
+  position: relative;
+  padding-left: 26px;
+  font-size: clamp(1.08rem, 1.4vw, 1.3rem);
+  line-height: 1.45;
+}
+
+.areas li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.12em;
+}
+
+/* Kontakt */
+.contact-grid {
+  margin-top: 54px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 42px 56px;
+}
+
+.contact-grid div {
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+
+.contact-grid span {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 0.88rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.contact-grid a,
+.contact-grid p {
+  margin: 0;
+  font-size: clamp(1.04rem, 1.3vw, 1.22rem);
+  line-height: 1.45;
+}
+
+.court-note {
+  margin: 58px 0 0;
+  max-width: 690px;
+  font-size: 1.08rem;
+  line-height: 1.55;
+  font-style: italic;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  padding: 40px 20px 48px;
+  background: var(--white);
+  border-top: 1px solid var(--line);
+  font-size: 1.05rem;
+}
+
+/* Rechtliche Unterseiten */
+.legal-page {
+  min-height: 100vh;
+  padding: 76px 28px;
+  background: var(--mint);
+}
+
+.legal-page > * {
+  width: min(100%, 760px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.legal-page h1 {
+  margin-top: 58px;
+  margin-bottom: 34px;
+  font-size: clamp(3rem, 7vw, 5.6rem);
+}
+
+.legal-page p {
+  font-size: 1.2rem;
+  line-height: 1.55;
+}
+
+.back-link {
+  display: block;
+  font-size: 1.08rem;
+}
+
+.legal-note {
+  margin-top: 42px;
+  font-size: 1rem !important;
+  font-style: italic;
+}
+
+@media (max-width: 820px) {
+  .intro {
+    min-height: auto;
+    padding: 40px 22px 66px;
+  }
+
+  .intro__inner,
+  .section__inner {
+    grid-template-columns: 1fr;
+    gap: 54px;
+  }
+
+  .intro__contact {
+    margin-top: 50px;
+  }
+
+  .intro__visuals {
+    grid-template-columns: minmax(0, 1fr) minmax(150px, 0.58fr);
+    gap: 28px;
+    align-items: end;
+  }
+
+  .portrait,
+  .logo {
+    width: 100%;
+  }
+
+  .section {
+    padding: 100px 22px;
+  }
+}
+
+@media (max-width: 560px) {
+  h1 {
+    font-size: clamp(3rem, 14vw, 4.4rem);
+  }
+
+  .intro__role {
+    font-size: 1.55rem;
+  }
+
+  .intro__visuals,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .logo {
+    width: 170px;
+  }
+}
