@@ -587,32 +587,3 @@ body:has(.legal-page) { background: var(--white); }
   body {
     overflow-x: hidden;
   }
-@media (max-width: 700px) {
-  .contact-grid {
-    grid-template-columns: 1fr;
-    column-gap: 0;
-    row-gap: 28px;
-  }
-
-  .message-button,
-  .brochure-box {
-    width: 100%;
-    max-width: none;
-  }
-
-  .contact-button-cell,
-  .contact-item {
-    width: 100%;
-  }
-
-  .section__inner,
-  .section__content {
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-  }
-
-  body {
-    overflow-x: hidden;
-  }
-}
