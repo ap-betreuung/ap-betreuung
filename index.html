@@ -82,12 +82,12 @@
 
   <div class="contact-action">
     <div class="brochure-area">
-  <div class="brochure-title">Infobroschüre ansehen</div>
-  <div class="brochure-languages">
+  <span class="brochure-title">Infobroschüre ansehen</span>
+  <p class="brochure-languages">
     <a href="Infobrosch%C3%BCre.pdf" target="_blank" rel="noopener">Deutsch</a>
     <span>|</span>
     <a href="Infobroschuere-Russisch.pdf" target="_blank" rel="noopener">Русский</a>
-  </div>
+  </p>
 </div>
   </div>
 
@@ -158,4 +158,25 @@
   display: inline !important;
   width: auto !important;
   margin: 0 !important;
+}
+.brochure-title {
+  display: block;
+}
+
+.brochure-languages {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0 0 0 !important;
+  padding: 0 !important;
+  white-space: nowrap;
+}
+
+.brochure-languages a,
+.brochure-languages span {
+  display: inline !important;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
