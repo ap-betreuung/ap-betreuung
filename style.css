@@ -534,6 +534,8 @@ border-top: 1.2px solid #102B46 !important;
   text-transform: none;
   color: #102B46;
   text-decoration: none;
+}.brochure-languages a {
+  font-weight: 600;
 }
 
 .brochure-languages a:hover {
