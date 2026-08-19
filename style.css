@@ -377,3 +377,74 @@ body:has(.legal-page) { background: var(--white); }
 .brochure-button .brochure-languages a:hover {
   text-decoration: underline;
 }
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 64px;
+  row-gap: 0;
+  align-items: start;
+}
+
+.contact-action {
+  display: flex;
+  align-items: flex-start;
+}
+
+.message-button,
+.brochure-button {
+  width: 232px;
+  min-height: 70px;
+  box-sizing: border-box;
+}
+
+.message-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brochure-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 14px;
+  border: 1px solid #102B46;
+  background: transparent;
+  color: #102B46;
+}
+
+.brochure-button .brochure-title {
+  font-size: 0.92rem;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #102B46;
+  white-space: nowrap;
+}
+
+.brochure-button .brochure-languages {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin: 6px 0 0 0 !important;
+  padding: 0 !important;
+  white-space: nowrap;
+}
+
+.brochure-button .brochure-languages a,
+.brochure-button .separator {
+  display: inline !important;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 0.78rem;
+  line-height: 1;
+  color: #102B46;
+  text-decoration: none;
+}
+
+.brochure-button .brochure-languages a:hover {
+  text-decoration: underline;
+}
