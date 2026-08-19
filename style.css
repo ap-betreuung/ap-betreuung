@@ -301,3 +301,25 @@ body:has(.legal-page) { background: var(--white); }
   .legal-page h1 { margin-bottom: 28px; }
   .legal-page h2 { margin-top: 34px; }
 }
+.brochure-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin-top: 34px;
+  margin-left: 14px;
+  padding: 14px 25px;
+  border: 1px solid #102B46;
+  border-radius: 2px;
+  background: transparent;
+  color: #102B46;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.brochure-button:hover {
+  background: #102B46;
+  color: white;
+  text-decoration: none;
+}
