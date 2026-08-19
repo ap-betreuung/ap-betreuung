@@ -138,27 +138,77 @@
   </footer>
 </body>
 </html>
-.brochure-area {
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 64px;
+  row-gap: 42px;
+  align-items: start;
+}
+
+.contact-button-cell {
+  border-top: 1px solid rgba(16, 43, 70, 0.16);
+  padding-top: 22px;
+}
+
+.message-button,
+.brochure-box {
+  width: 232px;
+  height: 70px;
+  box-sizing: border-box;
+}
+
+.message-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0 20px;
+  background: #102B46;
+  border: 1px solid #102B46;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.brochure-box {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  background: transparent;
+  border: 1px solid #102B46;
+  color: #102B46;
 }
 
 .brochure-title {
-  font-size: 1rem;
+  display: block;
+  font-size: 0.9rem;
+  line-height: 1.2;
   font-weight: 500;
   color: #102B46;
+  white-space: nowrap;
 }
 
 .brochure-languages {
   display: flex;
   align-items: center;
-  gap: 8px;
-  margin-top: 8px;
-  font-size: 0.9rem;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 7px;
+  white-space: nowrap;
 }
 
-.brochure-languages a {
+.brochure-languages a,
+.brochure-languages span {
+  display: inline;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  font-size: 0.78rem;
+  line-height: 1;
   color: #102B46;
   text-decoration: none;
 }
@@ -167,43 +217,24 @@
   text-decoration: underline;
 }
 
-.brochure-languages span {
-  opacity: 0.45;
-}
-.brochure-languages {
-  display: flex !important;
-  flex-direction: row !important;
-  align-items: center;
-  gap: 8px;
-  margin-top: 8px;
-  font-size: 0.9rem;
-  white-space: nowrap;
+.contact-item {
+  border-top: 1px solid rgba(16, 43, 70, 0.16);
+  padding-top: 20px;
 }
 
-.brochure-languages a,
-.brochure-languages span {
-  display: inline !important;
-  width: auto !important;
-  margin: 0 !important;
-}
-.brochure-title {
+.contact-item > span {
   display: block;
+  margin-bottom: 10px;
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
 }
 
-.brochure-languages {
-  display: flex !important;
-  flex-direction: row !important;
-  align-items: center;
-  gap: 8px;
-  margin: 8px 0 0 0 !important;
-  padding: 0 !important;
-  white-space: nowrap;
-}
-
-.brochure-languages a,
-.brochure-languages span {
-  display: inline !important;
-  width: auto !important;
-  margin: 0 !important;
-  padding: 0 !important;
+.contact-item > a,
+.contact-item > p {
+  display: block;
+  margin: 0;
+  color: #102B46;
+  text-decoration: none;
+  line-height: 1.5;
 }
