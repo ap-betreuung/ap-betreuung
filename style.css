@@ -587,3 +587,10 @@ body:has(.legal-page) { background: var(--white); }
   body {
     overflow-x: hidden;
   }
+@media (min-width: 701px) {
+  .brochure-box {
+    border: 1px solid #102B46 !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
