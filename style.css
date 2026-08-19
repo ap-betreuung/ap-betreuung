@@ -495,7 +495,7 @@ body:has(.legal-page) { background: var(--white); }
 
 .brochure-title {
   display: block;
-  font-size: 0.9rem;
+  font-size: 0.82rem;
   line-height: 1.2;
   font-weight: 500;
   color: #102B46;
