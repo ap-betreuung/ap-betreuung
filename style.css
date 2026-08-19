@@ -448,3 +448,103 @@ body:has(.legal-page) { background: var(--white); }
 .brochure-button .brochure-languages a:hover {
   text-decoration: underline;
 }
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 64px;
+  row-gap: 42px;
+  align-items: start;
+}
+
+.contact-button-cell {
+  border-top: 1px solid rgba(16, 43, 70, 0.16);
+  padding-top: 22px;
+}
+
+.message-button,
+.brochure-box {
+  width: 232px;
+  height: 70px;
+  box-sizing: border-box;
+}
+
+.message-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0 20px;
+  background: #102B46;
+  border: 1px solid #102B46;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.brochure-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  background: transparent;
+  border: 1px solid #102B46;
+  color: #102B46;
+}
+
+.brochure-title {
+  display: block;
+  font-size: 0.9rem;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #102B46;
+  white-space: nowrap;
+}
+
+.brochure-languages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 7px;
+  white-space: nowrap;
+}
+
+.brochure-languages a,
+.brochure-languages span {
+  display: inline;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  font-size: 0.78rem;
+  line-height: 1;
+  color: #102B46;
+  text-decoration: none;
+}
+
+.brochure-languages a:hover {
+  text-decoration: underline;
+}
+
+.contact-item {
+  border-top: 1px solid rgba(16, 43, 70, 0.16);
+  padding-top: 20px;
+}
+
+.contact-item > span {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.contact-item > a,
+.contact-item > p {
+  display: block;
+  margin: 0;
+  color: #102B46;
+  text-decoration: none;
+  line-height: 1.5;
+}
