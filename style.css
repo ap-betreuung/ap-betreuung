@@ -493,7 +493,7 @@ body:has(.legal-page) { background: var(--white); }
   gap: 6px;
   padding: 0 14px;
   background: transparent;
-  border: 1px solid #102B46;
+  border: 1px solid #102B46 !important;
   color: #102B46;
 }
 
